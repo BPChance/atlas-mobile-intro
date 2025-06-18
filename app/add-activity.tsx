@@ -51,7 +51,6 @@ export default function AddActivity() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // paddingTop: 100,
     justifyContent: "center",
     backgroundColor: "#FEF9E6",
   },
@@ -69,7 +68,7 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#1ED2AF",
-    padding: 15,
+    padding: 20,
     alignItems: "center",
   },
   buttonText: {
@@ -77,7 +76,7 @@ const styles = StyleSheet.create({
   },
   link: {
     backgroundColor: "#D00414",
-    padding: 15,
+    padding: 20,
     alignItems: "center",
   },
   linkText: {
