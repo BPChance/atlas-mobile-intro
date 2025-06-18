@@ -34,3 +34,13 @@ export async function fetchActivities(): Promise<any[]> {
 
   return result;
 }
+
+export async function deleteAllActivities() {
+  if (!db) db = await openDatabaseAsync("activities.db");
+  await db.execAsync(`DELETE FROM activities`);
+}
+
+export async function deleteActivityById(id: number) {
+  if (!db) db = await openDatabaseAsync("activities.db");
+  await db.runAsync("DELETE FROM activities WHERE id = ?;", [id]);
+}
